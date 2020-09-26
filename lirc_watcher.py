@@ -18,7 +18,7 @@ MQTT_BROKER = os.getenv('MQTT_BROKER', 'localhost')
 MQTT_USER = os.getenv('MQTT_USER', None)
 MQTT_PASSWORD = os.getenv('MQTT_PASSWORD', None)
 MQTT_QOS = os.getenv('MQTT_QOS', 1)
-MQTT_PORT = os.getenv('MQTT_PORT', 1883)
+MQTT_PORT = int(os.getenv('MQTT_PORT', 1883))
 MQTT_ID = os.getenv('MQTT_ID', 'lirc-watcher')
 MQTT_PREFIX = os.getenv('MQTT_PREFIX', 'lirc')
 
